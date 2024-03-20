@@ -10,9 +10,9 @@ const Navbar = () => {
           <div className="flex space-x-7">
             <div>
               <Link to="/" className="flex items-center px-2 py-4">
-                <img src={logo} alt="Logo" className="h-10 mr-2" />
+                <img src={logo} alt="Logo" className="h-12 mr-2" />
                 <span className="text-xl font-semibold text-gray-500">
-                  RehaishKiKhwaish
+                  FAST Quran and Sunnah Society
                 </span>
               </Link>
             </div>
@@ -42,22 +42,10 @@ const Navbar = () => {
 
           <div className="items-center hidden space-x-3 md:flex">
             <Link
-              to="/login"
-              className="px-2 py-2 font-medium text-gray-500 transition duration-300 rounded-xl hover:bg-golden-500 hover:text-white"
+              to="/deenfest"
+              className="inline-block px-4 py-2 font-medium text-white transition duration-300 ease-in-out rounded-lg shadow btn-29 bg-golden-gradient bg-golden-500 hover:bg-golden-600 hover:shadow-md"
             >
-              Log In
-            </Link>
-            <Link
-              to="/signup"
-              className="px-2 py-2 font-medium text-white transition duration-300 bg-golden-500 rounded-xl hover:bg-golden-400"
-            >
-              Sign Up
-            </Link>
-            <Link
-              to="/addListing"
-              className="inline-block px-2 py-2 font-medium text-white transition duration-300 bg-golden-500 rounded-xl hover:bg-golden-400"
-            >
-              Add Listing
+              Deen Fest
             </Link>
           </div>
 
@@ -101,7 +89,7 @@ const Navbar = () => {
           <li>
             <Link
               to="/contactus"
-              className="block px-2 py-4 text-sm transition duration-300 hover:bg-golden-500"
+              className="block px-2 py-4 text-sm transition duration-300 hover:bg-golden-900"
             >
               Contact Us
             </Link>
