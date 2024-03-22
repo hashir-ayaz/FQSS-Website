@@ -1,5 +1,4 @@
 import React from "react";
-import building from "../assets/Images/fastbuilding.jpg";
 import quran from "../assets/Images/quran.jpg";
 import logo from "../assets/Images/logo.png";
 
