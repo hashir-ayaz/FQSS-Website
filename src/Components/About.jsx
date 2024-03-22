@@ -8,6 +8,6 @@ const About = () => {
       <EventTimeLine />
     </div>
   );
-};
+}; //random commit
 
 export default About;
