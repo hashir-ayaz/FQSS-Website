@@ -3,7 +3,7 @@ import React from "react";
 
 const AboutCard = ({ imageSrc, title, text, history }) => {
   return (
-    <div className="flex max-w-4xl mx-auto overflow-hidden bg-white border-l-8 rounded-lg shadow-lg border-golden-500">
+    <div className="flex max-w-4xl mx-auto overflow-hidden bg-white border-l-8 rounded-lg shadow-lg min-h- border-golden-500">
       <div className="w-1/2">
         <img src={imageSrc} alt={title} className="object-cover h-full" />
       </div>
