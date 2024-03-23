@@ -6,8 +6,7 @@ import UserForm from "./Components/UserForm.jsx";
 import About from "./Components/About.jsx";
 import PageNotFound from "./Components/PageNotFound.jsx";
 import Layout from "./Components/Layout.jsx"; // Import the layout component
-import Hero from "./Components/Hero.jsx";
-
+import HomePage from "./Components/HomePage.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -15,7 +14,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <Hero />, // Rendered at the root path ("/")
+        element: <HomePage />, // Rendered at the root path ("/")
       },
       {
         path: "/deen-fest-registration",

@@ -9,6 +9,7 @@ const UserForm = () => {
       name: "",
       email: "",
       contactNumber: "",
+      eventOption: "",
     },
     validationSchema: Yup.object({
       name: Yup.string().required("Required"),
@@ -18,6 +19,7 @@ const UserForm = () => {
         .min(10, "Must be exactly 10 digits")
         .max(10, "Must be exactly 10 digits")
         .required("Required"),
+      eventOption: Yup.string().required("Required"),
     }),
     onSubmit: async (values, { resetForm }) => {
       try {
@@ -50,7 +52,7 @@ const UserForm = () => {
 
   return (
     // Center the form on the page
-    <div className="flex items-center justify-center h-screen bg-black opacity-90">
+    <div className=" bg-black opacity-90 bg-[url('../assets/Images/quran.jpg')] bg-cover bg-center h-screen flex justify-center items-center">
       <form
         onSubmit={formik.handleSubmit}
         className="w-full max-w-md space-y-4"
