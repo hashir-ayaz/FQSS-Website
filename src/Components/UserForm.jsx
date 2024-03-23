@@ -19,8 +19,32 @@ const UserForm = () => {
         .max(10, "Must be exactly 10 digits")
         .required("Required"),
     }),
-    onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+    onSubmit: async (values, { resetForm }) => {
+      try {
+        const response = await fetch("http://localhost:5000/participants", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(values),
+        });
+
+        if (response.ok) {
+          // Assuming the server responds with JSON
+          // const responseData = await response.json();
+          alert("Participant added successfully");
+          resetForm({});
+        } else {
+          alert(
+            "An error occurred while adding a participant. Please try again."
+          );
+        }
+      } catch (error) {
+        console.error("Error adding participant:", error);
+        alert(
+          "An error occurred while adding a participant. Please check your network connection and try again."
+        );
+      }
     },
   });
 
