@@ -7,6 +7,7 @@ import About from "./Components/About.jsx";
 import PageNotFound from "./Components/PageNotFound.jsx";
 import Layout from "./Components/Layout.jsx"; // Import the layout component
 import HomePage from "./Components/HomePage.jsx";
+import TallyForm from "./Components/TallyForm.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -18,7 +19,7 @@ const router = createBrowserRouter([
       },
       {
         path: "/deen-fest-registration",
-        element: <UserForm />,
+        element: <TallyForm />,
       },
       {
         path: "/about",
