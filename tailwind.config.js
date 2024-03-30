@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["Merriweather", "sans-serif"],
+      },
       colors: {
         golden: {
           100: "#fdf6e3", // Lightest

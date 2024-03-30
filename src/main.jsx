@@ -2,12 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App.jsx";
-import UserForm from "./Components/UserForm.jsx";
 import About from "./Components/About.jsx";
 import PageNotFound from "./Components/PageNotFound.jsx";
 import Layout from "./Components/Layout.jsx"; // Import the layout component
 import HomePage from "./Components/HomePage.jsx";
 import TallyForm from "./Components/TallyForm.jsx";
+import ContactUs from "./Components/ContactUs.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/contactus",
+        element: <ContactUs />,
       },
       {
         path: "*",
