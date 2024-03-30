@@ -27,7 +27,7 @@ const TallyForm = () => {
   }, []);
 
   return (
-    <div className="bg-black opacity-90">
+    <div className="flex-1 bg-white ">
       <iframe
         data-tally-src="https://tally.so/embed/wzqr5g?transparentBackground=1&dynamicHeight=1"
         loading="lazy"
@@ -38,7 +38,7 @@ const TallyForm = () => {
           marginHeight: "0",
           marginWidth: "0",
         }}
-        title="FQSS Event Registration"
+        title="Deen Fest Event Registration"
       ></iframe>
     </div>
   );

@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/Images/logo.png";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className="sticky top-0 z-50 p-2 bg-black shadow-lg opacity-90">
       <div className="max-w-6xl px-4 mx-auto">
@@ -22,7 +27,7 @@ const Navbar = () => {
             <div className="items-center hidden space-x-1 md:flex">
               <Link
                 to="/"
-                className="px-2 py-4 font-semibold text-gray-500 border-b-4 border-golden-500"
+                className="px-2 py-4 font-semibold text-gray-500 hover:text-golden-400"
               >
                 Home
               </Link>
@@ -49,7 +54,10 @@ const Navbar = () => {
           </div>
 
           <div className="flex items-center md:hidden">
-            <button className="outline-none mobile-menu-button">
+            <button
+              className="outline-none mobile-menu-button"
+              onClick={toggleMenu}
+            >
               <svg
                 className="w-6 h-6 text-gray-500 hover:text-golden-400"
                 fill="none"
@@ -65,36 +73,45 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+      {isMenuOpen && (
+        <div className=" mobile-menu">
+          <ul>
+            <li>
+              <Link
+                to="/"
+                className="block px-2 py-4 text-sm font-semibold text-white hover:bg-golden-500"
+              >
+                Home
+              </Link>
+            </li>
 
-      <div className="hidden mobile-menu">
-        <ul>
-          <li>
-            <Link
-              to="/home"
-              className="block px-2 py-4 text-sm font-semibold text-white bg-golden-500"
-            >
-              Home
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              to="/about"
-              className="block px-2 py-4 text-sm transition duration-300 hover:bg-golden-500"
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/contactus"
-              className="block px-2 py-4 text-sm transition duration-300 hover:bg-golden-900"
-            >
-              Contact Us
-            </Link>
-          </li>
-        </ul>
-      </div>
+            <li>
+              <Link
+                to="/about"
+                className="block px-2 py-4 text-sm text-white transition duration-300 hover:bg-golden-500"
+              >
+                About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/contactus"
+                className="block px-2 py-4 text-sm text-white transition duration-300 hover:bg-golden-900"
+              >
+                Contact Us
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/deenfest"
+                className="block px-2 py-4 text-sm text-white transition duration-300 hover:bg-golden-900"
+              >
+                Deen Fest
+              </Link>
+            </li>
+          </ul>
+        </div>
+      )}
     </nav>
   );
 };
