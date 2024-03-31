@@ -8,6 +8,7 @@ import Layout from "./Components/Layout.jsx"; // Import the layout component
 import HomePage from "./Components/HomePage.jsx";
 import TallyForm from "./Components/TallyForm.jsx";
 import ContactUs from "./Components/ContactUs.jsx";
+import DeenFest from "./Components/DeenFest.jsx";
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
       {
         path: "/contactus",
         element: <ContactUs />,
+      },
+      {
+        path: "/deenfest",
+        element: <DeenFest />,
       },
       {
         path: "*",

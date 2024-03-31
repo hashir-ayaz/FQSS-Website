@@ -1,9 +1,10 @@
 import React from "react";
 import logo from "../assets/Images/logo.png"; // Assume you have a logo image
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="w-full py-8 text-white bg-black bg-opacity-90">
+    <footer className="w-full py-8 text-white bg-black ">
       <div className="flex flex-wrap items-center justify-between max-w-6xl px-4 mx-auto">
         {/* Logo Column */}
         <div className="flex flex-col items-center mb-6 md:items-start">
@@ -16,24 +17,24 @@ const Footer = () => {
           <h3 className="mb-4 text-lg font-bold">Useful Links</h3>
           <ul>
             <li>
-              <a href="#" className="hover:underline">
+              <Link to="/" className="hover:underline">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link to="/about" className="hover:underline">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
-                Events
-              </a>
+              <Link to="/deenfest" className="hover:underline">
+                Deen Fest
+              </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <Link to="/contactus" className="hover:underline">
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -42,12 +43,12 @@ const Footer = () => {
         <div className="mb-6">
           <h3 className="mb-4 text-lg font-bold">Contact Us</h3>
           <ul>
-            <li>Email: contact@example.com</li>
+            <li>Email: fqss@nu.edu.pk</li>
             <li>Phone: +123 456 7890</li>
             <li>
-              <a href="#" className="hover:underline">
-                Contact Form
-              </a>
+              <Link href="/sponsor" className="hover:underline">
+                Become a Sponsor
+              </Link>
             </li>
           </ul>
         </div>

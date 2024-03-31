@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Merriweather", "sans-serif"],
+        sans: ["Btter", "sans-serif"],
       },
       colors: {
         golden: {
