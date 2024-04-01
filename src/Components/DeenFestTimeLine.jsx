@@ -6,25 +6,25 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
-import { day1Events } from "./Day1Events";
 
-export default function DeenFestTimeline() {
+// Update the function signature to use props correctly.
+export default function DeenFestTimeline({ eventData }) {
   return (
     <Timeline className="text-white bg-black" position="alternate">
-      {day1Events.map((event, index) => (
+      {eventData.map((event, index) => (
         <TimelineItem key={index}>
           <TimelineOppositeContent className="text-white">
             {event.time}
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot />
-            {index !== day1Events.length - 1 && <TimelineConnector />}{" "}
+            {index !== eventData.length - 1 && <TimelineConnector />}{" "}
             {/* No connector after the last item */}
           </TimelineSeparator>
           <TimelineContent>
             <h3>{event.event}</h3>
             <p>{event.details}</p>
-            <p>{event.venue}</p>
+            <p className="text-golden-400">{event.venue}</p>
           </TimelineContent>
         </TimelineItem>
       ))}

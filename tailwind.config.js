@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Btter", "sans-serif"],
+        sans: ["Bitter", "sans-serif"],
       },
       colors: {
         golden: {
@@ -12,7 +12,7 @@ export default {
           200: "#fae9c3",
           300: "#f7dba3",
           400: "#f4ce83",
-          500: "#96770f", // Base shade of golden
+          500: "#F7B32B", // Base shade of golden
           600: "#8a6a0e",
           700: "#7e5d0d",
           800: "#72510c",
