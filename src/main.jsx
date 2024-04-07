@@ -9,6 +9,7 @@ import HomePage from "./Components/HomePage.jsx";
 import TallyForm from "./Components/TallyForm.jsx";
 import ContactUs from "./Components/ContactUs.jsx";
 import DeenFest from "./Components/DeenFest.jsx";
+import UserRegistrationForm from "./Components/UserRegistrationForm.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/deen-fest-registration",
-        element: <TallyForm />,
+        // element: <TallyForm />,
+        element: <UserRegistrationForm />,
       },
       {
         path: "/about",

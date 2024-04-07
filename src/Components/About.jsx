@@ -10,13 +10,13 @@ const About = () => {
       <AboutCard
         imageSrc={HalaqahImage}
         title="About FQSS"
-        history="Our History"
+        description="Our History"
         text="We established our center in 1954, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       />
       <AboutCard
         imageSrc={team}
         title="Our Team"
-        history="Our History"
+        description="Our History"
         text="We established our center in 1954, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
       />
     </div>

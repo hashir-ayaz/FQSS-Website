@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import DeenFestTimeLine from "./DeenFestTimeLine";
 import { day1Events, day2Events, day3Events } from "./Day1Events";
 import { Button, ButtonGroup } from "@mui/material";
+import DeenFestEventCard from "./DeenFestEventCard";
 
 function DeenFestHero({ title }) {
   // Ensure you are passing 'logo' as a prop or importing it
@@ -18,7 +19,7 @@ function DeenFestHero({ title }) {
         <h1 className="text-4xl font-extrabold text-golden-500 sm:text-4xl md:text-5xl lg:text-6xl">
           {title}
         </h1>
-        <p className="p-3 text-xl text-white">
+        <p className="p-3 text-xl font-semibold text-white">
           Deen Fest is a religious festival hosted by FQSS, Islamabad that aims
           to promote Islamic teachings and values among the youth.
         </p>
@@ -41,19 +42,12 @@ function DeenFestAbout() {
           <h2 className="mb-4 text-2xl font-bold text-golden-500">
             About Deen Fest
           </h2>
-          <p className="mb-8 max-w-80">
+          <p className="mb-8 font-semibold max-w-screen">
             Deen Fest is a religious festival that aims to promote Islamic
             teachings and values among the youth. It provides a platform for
             students to learn about the Quran and Sunnah in a fun and engaging
             way. The theme for Deen Fest is showing our solidarity for Palestine
           </p>
-          <h3 className="text-xl font-semibold">Objectives</h3>
-          <ul className="text-left list-disc list-inside">
-            <li>Spread awareness about Islamic teachings</li>
-            <li>Promote Islamic values and ethics</li>
-            <li>Encourage students to follow the Quran and Sunnah</li>
-            <li>Provide a platform for students to showcase their talents</li>
-          </ul>
         </div>
       </div>
     </div>
@@ -82,6 +76,23 @@ function DeenFest() {
         {currentTab === "day1" && <DeenFestTimeLine eventData={day1Events} />}
         {currentTab === "day2" && <DeenFestTimeLine eventData={day2Events} />}
         {currentTab === "day3" && <DeenFestTimeLine eventData={day3Events} />}
+      </div>
+
+      <div>
+        {" "}
+        {/*section for the events we have*/}
+        <h2>Events</h2>
+        <div className="grid justify-center grid-cols-1 gap-1 px-2 md:grid-cols-3 min-w-20">
+          {day1Events.map((event) => (
+            <DeenFestEventCard
+              key={event.id}
+              eventName={event.eventName}
+              time={event.time}
+              details={event.details}
+              venue={event.venue}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
