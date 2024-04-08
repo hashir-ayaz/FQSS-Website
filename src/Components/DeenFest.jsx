@@ -78,14 +78,13 @@ function DeenFest() {
         {currentTab === "day3" && <DeenFestTimeLine eventData={day3Events} />}
       </div>
 
-      <div>
-        {" "}
+      <div className="md:max-w-4/5 mx-autoflex justify-center ">
         {/*section for the events we have*/}
         <h2>Events</h2>
-        <div className="grid justify-center grid-cols-1 gap-1 px-2 md:grid-cols-3 min-w-20">
-          {day1Events.map((event) => (
+        <div className=" w-4/5 grid grid-cols-1 gap-4 px-4 md:grid-cols-3 mx-auto ">
+          {day1Events.map((event, index) => (
             <DeenFestEventCard
-              key={event.id}
+              key={index}
               eventName={event.eventName}
               time={event.time}
               details={event.details}
