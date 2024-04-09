@@ -17,7 +17,7 @@ const Hero = () => {
             FAST Quran and Sunnah Society
           </h1>
           <h2 className="text-xl text-center text-white lg:text-3xl">
-            Faith, Awareness, Integrity, Tolerance, Humanity
+            Enlightning one soul at a time, starting with our own ✨
           </h2>
           <Link
             to={"/deen-fest-registration"}

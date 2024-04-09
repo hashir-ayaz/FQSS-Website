@@ -82,7 +82,7 @@ const Navbar = () => {
                 className="block px-2 py-4 text-sm font-semibold text-white hover:bg-golden-500"
                 onClick={toggleMenu}
               >
-                Home
+                🏠 Home
               </Link>
             </li>
 
@@ -92,7 +92,7 @@ const Navbar = () => {
                 className="block px-2 py-4 text-sm text-white transition duration-300 hover:bg-golden-500"
                 onClick={toggleMenu}
               >
-                About
+                ℹ️ About
               </Link>
             </li>
             <li>
@@ -101,7 +101,7 @@ const Navbar = () => {
                 className="block px-2 py-4 text-sm text-white transition duration-300 hover:bg-golden-900"
                 onClick={toggleMenu}
               >
-                Contact Us
+                ✉️ Contact Us
               </Link>
             </li>
             <li>
@@ -110,7 +110,7 @@ const Navbar = () => {
                 className="block px-2 py-4 text-sm text-white transition duration-300 hover:bg-golden-900"
                 onClick={toggleMenu}
               >
-                Deen Fest
+                ✨ Deen Fest
               </Link>
             </li>
           </ul>

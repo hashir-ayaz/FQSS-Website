@@ -25,7 +25,7 @@ const ContactUs = () => {
           </div>
         </div>
         {/* SponsorForm component with a white background */}
-        <div className="flex w-2/3 p-8 mt-8 bg-white md:mt-0 md:max-w-xl">
+        <div className="flex py-8 mx-auto mt-8 md:mt-0 md:max-w-xl">
           <SponsorForm />
         </div>
       </div>
