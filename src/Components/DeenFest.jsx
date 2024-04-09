@@ -16,16 +16,16 @@ function DeenFestHero({ title }) {
         className="self-center max-w-xs mb-10 sm:max-w-sm md:max-w-md"
       />
       <div className="flex flex-col max-w-screen-xl px-10 mx-auto text-center">
-        <h1 className="text-4xl font-extrabold text-golden-500 sm:text-4xl md:text-5xl lg:text-6xl">
+        <h1 className="mb-4 text-4xl font-extrabold text-golden-500 sm:text-4xl md:text-5xl lg:text-6xl">
           {title}
         </h1>
-        <p className="p-3 text-xl font-semibold text-white">
+        <p className="p-3 text-xl font-semibold text-white md:text-2xl">
           Deen Fest is a religious festival hosted by FQSS, Islamabad that aims
           to promote Islamic teachings and values among the youth.
         </p>
         <Link
           to="/deen-fest-registration"
-          className="inline-block px-4 py-2 mt-4 text-white rounded-xl bg-golden-500"
+          className="inline-block w-40 px-4 py-2 mx-auto mt-4 text-white rounded-xl bg-golden-500 hover:bg-golden-400"
         >
           Register Now!
         </Link>
@@ -39,10 +39,10 @@ function DeenFestAbout() {
     <div>
       <div className="px-4 py-8 bg-black">
         <div className="flex flex-col items-center mx-auto text-center text-white max-w-7xl">
-          <h2 className="mb-4 text-2xl font-bold text-golden-500">
+          <h2 className="mb-4 text-2xl font-bold md:text-4xl text-golden-500">
             About Deen Fest
           </h2>
-          <p className="mb-8 font-semibold max-w-screen">
+          <p className="mb-8 font-semibold max-w-screen md:text-2xl">
             Deen Fest is a religious festival that aims to promote Islamic
             teachings and values among the youth. It provides a platform for
             students to learn about the Quran and Sunnah in a fun and engaging
@@ -78,15 +78,15 @@ function DeenFest() {
         {currentTab === "day3" && <DeenFestTimeLine eventData={day3Events} />}
       </div>
 
-      <div className="md:max-w-4/5 mx-auto justify-center ">
+      <div className="justify-center mx-auto md:max-w-4/5 ">
         {/*section for the events we have*/}
-        <h2 className="mb-4 text-2xl font-bold text-golden-500 text-center">
+        <h2 className="mb-4 text-2xl font-bold text-center md:text-4xl text-golden-500">
           Events
         </h2>
-        <p className="mb-4 text-l font-bold text-white px-5 text-center">
+        <p className="px-5 mb-4 font-bold text-center text-white text-l md:text-2xl">
           Take a look at the exciting events we have planned for you!
         </p>
-        <div className=" w-full mx-auto grid grid-cols-1 gap-4 md:gap-1 px-4 md:w-4/5 md:grid-cols-3  ">
+        <div className="grid w-full grid-cols-1 gap-4 px-4 mx-auto md:gap-1 md:w-4/5 md:grid-cols-3">
           {day1Events.map((event, index) => (
             <DeenFestEventCard
               key={index}

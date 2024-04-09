@@ -1,41 +1,48 @@
-const dummyEvents = [
+import sahiladeem from "../assets/Images/sahiladeem.webp";
+import pyaaryatimepass from "../assets/Images/pyaaryatimepass.png";
+import qaiserraja from "../assets/Images/qaiserraja.png";
+import exploringisms from "../assets/Images/exploring the isms.png";
+import saeedanwar from "../assets/Images/saeedanwar.png";
+import mirageofatheism from "../assets/Images/mirageofatheism.png";
+
+const highlightEvents = [
   {
-    image: "../assets/Images/pyaaryatimepass.heic",
+    image: pyaaryatimepass,
     title: "Pyaar ya time pass",
     presenter: "Tuaha Bin Jalil",
     description:
       "How do we navigate the complexities when caught between faith and love in this era of temptations?",
   },
   {
-    image: "../assets/Images/fastbuilding.jpg",
+    image: exploringisms,
     title: "Exploring the Isms",
     presenter: "Muhammad Hijab",
     description:
       "A discussion on feminism , liberalism and the need for absolute equality.",
   },
   {
-    image: "path-to-your-images/buddha.jpg",
+    image: qaiserraja,
     title: "Society with Islam and without",
     presenter: "Qaiser Raja",
     description:
       "A talk on the profound influence of islam on society and the consequences of its absence.",
   },
   {
-    image: "path-to-your-images/jesus-sermon.jpg",
+    image: saeedanwar,
     title: "Reasons for the downfall of the Ummah",
     presenter: "Saeed Anwar",
     description:
       "Discussing the Palestinian struggle and the role of the Muslim Ummah.",
   },
   {
-    image: "path-to-your-images/guru-nanak.jpg",
+    image: sahiladeem,
     title: "Solidarity with Palestine: Beyond Borders",
     presenter: "Mr Sahil Adeem",
     description:
       "Addressing the importance of unity and solidarity with the oppressed and a discussion on muslim identity",
   },
   {
-    image: "path-to-your-images/krishna.jpg",
+    image: mirageofatheism,
     title: "The Mirage of Atheism",
     presenter: "Hamza Tzortzis",
     description:
@@ -43,4 +50,4 @@ const dummyEvents = [
   },
 ];
 //export
-export { dummyEvents };
+export { highlightEvents };

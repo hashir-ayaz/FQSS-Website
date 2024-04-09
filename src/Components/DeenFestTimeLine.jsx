@@ -10,7 +10,10 @@ import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 // Update the function signature to use props correctly.
 export default function DeenFestTimeline({ eventData }) {
   return (
-    <Timeline className="text-white bg-black" position="alternate">
+    <Timeline
+      className="mx-6 text-white bg-black md:mx-40"
+      position="alternate"
+    >
       {eventData.map((event, index) => (
         <TimelineItem key={index}>
           <TimelineOppositeContent className="text-white">

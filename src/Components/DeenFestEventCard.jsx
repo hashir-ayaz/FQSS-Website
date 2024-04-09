@@ -8,11 +8,11 @@ const DeenFestEventCard = ({ eventName, time, details, venue }) => {
         <Typography
           variant="h5"
           color="blue-gray"
-          className="mb-2 text-golden-400"
+          className="mb-2 font-bold text-golden-400 md:text-2xl"
         >
           {eventName}
         </Typography>
-        <Typography className="text-white">
+        <Typography className="text-white md:text-xl">
           <span className="font-semibold">Time:</span> {time} <br></br>
           <span className="font-semibold">Venue:</span> {venue} <br></br>
           <span className="font-semibold">Details:</span> {details}
