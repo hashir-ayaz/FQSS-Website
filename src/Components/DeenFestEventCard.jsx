@@ -3,7 +3,7 @@ import { Card, CardBody, Typography } from "@material-tailwind/react";
 
 const DeenFestEventCard = ({ eventName, time, details, venue }) => {
   return (
-    <Card className="mt-6 w-96 bg-golden-500 bg-opacity-70">
+    <Card className="mt-6 bg-opacity-85 w-96 bg-golden-500">
       <CardBody>
         <Typography
           variant="h5"

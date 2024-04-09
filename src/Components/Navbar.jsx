@@ -27,20 +27,20 @@ const Navbar = () => {
             <div className="items-center hidden space-x-1 md:flex">
               <Link
                 to="/"
-                className="px-2 py-4 font-semibold text-gray-500 hover:text-golden-400"
+                className="px-2 py-4 font-semibold text-gray-500 hover:text-golden-500"
               >
                 Home
               </Link>
 
               <Link
                 to="/about"
-                className="px-2 py-4 font-semibold text-gray-500 transition duration-300 hover:text-golden-400"
+                className="px-2 py-4 font-semibold text-gray-500 transition duration-300 hover:text-golden-500"
               >
                 About
               </Link>
               <Link
                 to="/contactus"
-                className="px-2 py-4 font-semibold text-gray-500 transition duration-300 hover:text-golden-400"
+                className="px-2 py-4 font-semibold text-gray-500 transition duration-300 hover:text-golden-500"
               >
                 Contact Us
               </Link>

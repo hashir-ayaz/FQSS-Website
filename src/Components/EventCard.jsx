@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const EventCard = ({ title, presenter, description, image }) => {
   return (
-    <div className="flex flex-col h-full max-w-sm overflow-hidden rounded shadow-lg border-golden-500">
+    <div className="flex flex-col h-full max-w-sm overflow-hidden rounded shadow-lg opacity-75 bg-golden-500 border-golden-500">
       {" "}
       {/* Ensure cards grow to full height */}
       <div className="flex-shrink-0">
