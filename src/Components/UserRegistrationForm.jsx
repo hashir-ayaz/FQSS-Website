@@ -1,10 +1,33 @@
 import React from "react";
+import axios from "axios";
 
 function UserRegistrationForm() {
   // Add your form submission logic here
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    // Process the form data
+
+    const formData = new FormData(event.target);
+    const postData = {
+      full_name: formData.get("fullName"), // Changed to "fullName"
+      email: formData.get("email"),
+      phone_number: formData.get("phone"),
+      event_name: formData.get("eventName"), // The name attribute was missing
+      payment_img: formData.get("payment"), // The name attribute was missing
+      payment_status: "pending", // Default to "pending"
+    };
+
+    try {
+      const response = await axios.post(
+        "http://localhost:5000/participants",
+        postData
+      );
+      console.log(response.data);
+      // Handle success (e.g., inform the user, clear form...)
+      console.log("Form submitted successfully");
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      // Handle error (e.g., inform the user...)
+    }
   };
 
   return (
@@ -13,6 +36,7 @@ function UserRegistrationForm() {
         <div>
           <label
             htmlFor="fullName"
+            name="fullName" // The name attribute was missing
             className="block text-sm font-medium text-gray-700"
           >
             Full Name *
@@ -36,6 +60,7 @@ function UserRegistrationForm() {
           <input
             type="email"
             id="email"
+            name="email" // The name attribute was
             required
             placeholder="eg. muhammad@gmail.com"
             className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
@@ -53,6 +78,7 @@ function UserRegistrationForm() {
             type="tel"
             id="phone"
             required
+            name="phone"
             placeholder="+92 333 XXXXXXX"
             className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
           />
@@ -60,18 +86,20 @@ function UserRegistrationForm() {
 
         <div>
           <label
-            htmlFor="event"
+            htmlFor="eventName"
             className="block text-sm font-medium text-gray-700"
           >
             Which Event would you like to register for? *
           </label>
           <select
-            id="event"
+            id="eventName"
+            name="eventName" // This was
             required
+            defaultValue=""
             className="block w-full py-2 pl-3 pr-10 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
           >
-            <option selected>Choose an event</option>
-            {/* Replace these options with real event data */}
+            <option value="">Choose an event</option>
+
             <option>Event A</option>
             <option>Event B</option>
             <option>Event C</option>
@@ -87,6 +115,7 @@ function UserRegistrationForm() {
             here *
           </label>
           <input
+            name="payment"
             type="file"
             id="payment"
             required
@@ -104,5 +133,4 @@ function UserRegistrationForm() {
     </div>
   );
 }
-
 export default UserRegistrationForm;

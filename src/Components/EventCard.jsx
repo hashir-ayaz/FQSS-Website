@@ -1,26 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const EventCard = ({ title, presenter, description }) => {
-  // Initialize state within the component
-  const [fakeImage, setFakeImage] = useState("https://via.placeholder.com/300");
-
-  // Use `useEffect` inside the component to fetch the image
-  useEffect(() => {
-    fetch("https://source.unsplash.com/random")
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Network response was not ok " + response.statusText);
-        }
-        return response.url; // The URL of the random image
-      })
-      .then((imageUrl) => {
-        setFakeImage(imageUrl); // Update state with the new image URL
-      })
-      .catch((error) => {
-        console.error("Fetch error: ", error);
-      });
-  }, []); // Empty dependency array means this effect will only run once after the initial render
-
+const EventCard = ({ title, presenter, description, image }) => {
   return (
     <div className="flex flex-col h-full max-w-sm overflow-hidden rounded shadow-lg border-golden-500">
       {" "}
@@ -30,7 +10,7 @@ const EventCard = ({ title, presenter, description }) => {
         {/* Prevent the image from stretching */}
         <img
           className="object-cover w-full h-48"
-          src={fakeImage}
+          src={image}
           alt={title}
         />{" "}
         {/* Fixed height for images */}

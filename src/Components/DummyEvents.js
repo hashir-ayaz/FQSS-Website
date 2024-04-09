@@ -1,43 +1,45 @@
 const dummyEvents = [
   {
-    image: "path-to-your-images/prophet-muhammad.jpg",
-    title: "Life of the Prophet Muhammad",
+    image: "../assets/Images/pyaaryatimepass.heic",
+    title: "Pyaar ya time pass",
     presenter: "Tuaha Bin Jalil",
     description:
-      "An in-depth look at the Seerah of the final Messenger of Islam.",
+      "How do we navigate the complexities when caught between faith and love in this era of temptations?",
   },
   {
-    image: "path-to-your-images/moses-on-mount.jpg",
-    title: "Moses: The Exodus",
+    image: "../assets/Images/fastbuilding.jpg",
+    title: "Exploring the Isms",
     presenter: "Muhammad Hijab",
-    description: "Exploring the journey and challenges of Prophet Moses.",
+    description:
+      "A discussion on feminism , liberalism and the need for absolute equality.",
   },
   {
     image: "path-to-your-images/buddha.jpg",
-    title: "Teachings of Buddha",
-    presenter: "Abu Saad",
+    title: "Society with Islam and without",
+    presenter: "Qaiser Raja",
     description:
-      "A dive into the life and enlightenment of Siddhārtha Gautama.",
+      "A talk on the profound influence of islam on society and the consequences of its absence.",
   },
   {
     image: "path-to-your-images/jesus-sermon.jpg",
-    title: "The Sermon on the Mount",
-    presenter: "Saqlain Mushtaq",
+    title: "Reasons for the downfall of the Ummah",
+    presenter: "Saeed Anwar",
     description:
-      "Discussing the most famous sermon by Jesus and its implications for modern Christianity.",
+      "Discussing the Palestinian struggle and the role of the Muslim Ummah.",
   },
   {
     image: "path-to-your-images/guru-nanak.jpg",
-    title: "Guru Nanak and the Founding of Sikhism",
-    presenter: "Muzammil Hussain",
+    title: "Solidarity with Palestine: Beyond Borders",
+    presenter: "Mr Sahil Adeem",
     description:
-      "The life of Guru Nanak and the core tenets he established for Sikhism.",
+      "Addressing the importance of unity and solidarity with the oppressed and a discussion on muslim identity",
   },
   {
     image: "path-to-your-images/krishna.jpg",
-    title: "The Bhagavad Gita",
-    presenter: "Swami Sarvapriyananda",
-    description: "An exploration of the dialogue between Krishna and Arjuna.",
+    title: "The Mirage of Atheism",
+    presenter: "Hamza Tzortzis",
+    description:
+      "A compelling case on refuting the misconception that science leads to atheism.",
   },
 ];
 //export

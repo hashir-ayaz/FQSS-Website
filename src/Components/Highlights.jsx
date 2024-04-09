@@ -1,6 +1,6 @@
 import React from "react";
 import EventCard from "./EventCard";
-import { dummyEvents } from "../Components/DummyEvents";
+import { dummyEvents } from "./DummyEvents";
 
 function Highlights() {
   return (
