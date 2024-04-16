@@ -11,8 +11,8 @@ function UserRegistrationForm() {
       full_name: formData.get("fullName"), // Changed to "fullName"
       email: formData.get("email"),
       phone_number: formData.get("phone"),
-      event_name: formData.get("eventName"), // The name attribute was missing
-      payment_img: formData.get("payment"), // The name attribute was missing
+      event_name: formData.get("eventName"), // Corrected attribute, previously missing
+      // payment_img: formData.get("payment"), // Corrected attribute, previously missing
       payment_status: "pending", // Default to "pending"
     };
 
@@ -31,13 +31,15 @@ function UserRegistrationForm() {
   };
 
   return (
-    <div className="max-w-md p-4 mx-auto">
+    <div className="max-w-md p-4 mx-auto text-white bg-black">
+      {" "}
+      {/* Changed to dark background and white text */}
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label
             htmlFor="fullName"
-            name="fullName" // The name attribute was missing
-            className="block text-sm font-medium text-gray-700"
+            name="fullName" // Corrected missing attribute
+            className="block text-sm font-medium text-gray-300" // Changed label color to lighter grey for visibility
           >
             Full Name *
           </label>
@@ -45,32 +47,32 @@ function UserRegistrationForm() {
             type="text"
             id="fullName"
             required
-            placeholder="Eg Mohammed Ali"
-            className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            placeholder="E.g. Mohammed Ali"
+            className="block w-full px-3 py-2 mt-1 text-white bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" // Adjusted styles for dark mode
           />
         </div>
 
         <div>
           <label
             htmlFor="email"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-sm font-medium text-gray-300" // Changed label color to lighter grey for visibility
           >
             Email *
           </label>
           <input
             type="email"
             id="email"
-            name="email" // The name attribute was
+            name="email" // Corrected missing attribute
             required
-            placeholder="eg. muhammad@gmail.com"
-            className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            placeholder="e.g. muhammad@gmail.com"
+            className="block w-full px-3 py-2 mt-1 text-white bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" // Adjusted styles for dark mode
           />
         </div>
 
         <div>
           <label
             htmlFor="phone"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-sm font-medium text-gray-300" // Changed label color to lighter grey for visibility
           >
             Phone Number *
           </label>
@@ -80,26 +82,25 @@ function UserRegistrationForm() {
             required
             name="phone"
             placeholder="+92 333 XXXXXXX"
-            className="block w-full px-3 py-2 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            className="block w-full px-3 py-2 mt-1 text-white bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" // Adjusted styles for dark mode
           />
         </div>
 
         <div>
           <label
             htmlFor="eventName"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-sm font-medium text-gray-300" // Changed label color to lighter grey for visibility
           >
             Which Event would you like to register for? *
           </label>
           <select
             id="eventName"
-            name="eventName" // This was
+            name="eventName" // Corrected missing attribute
             required
             defaultValue=""
-            className="block w-full py-2 pl-3 pr-10 mt-1 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            className="block w-full py-2 pl-3 pr-10 mt-1 text-white bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" // Adjusted styles for dark mode
           >
             <option value="">Choose an event</option>
-
             <option>Event A</option>
             <option>Event B</option>
             <option>Event C</option>
@@ -109,7 +110,7 @@ function UserRegistrationForm() {
         <div>
           <label
             htmlFor="payment"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-sm font-medium text-gray-300" // Changed label color to lighter grey for visibility
           >
             Please send the amount to +92 333 XXXXXXX and upload the screenshot
             here *
@@ -119,13 +120,13 @@ function UserRegistrationForm() {
             type="file"
             id="payment"
             required
-            className="block w-full px-3 py-2 mt-1 text-sm text-gray-600 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100"
+            className="block w-full px-3 py-2 mt-1 text-gray-300 bg-gray-700 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100" // Adjusted styles for dark mode and file input styling
           />
         </div>
 
         <button
           type="submit"
-          className="flex justify-center w-full px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          className="flex justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-golden-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
         >
           Submit
         </button>

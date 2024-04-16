@@ -1,7 +1,7 @@
-import sahiladeem from "../assets/Images/sahiladeem.webp";
+import sahiladeem from "../assets/Images/sadeem.png";
 import pyaaryatimepass from "../assets/Images/pyaaryatimepass.png";
 import qaiserraja from "../assets/Images/qaiserraja.png";
-import exploringisms from "../assets/Images/exploring the isms.png";
+import exploringisms from "../assets/Images/mhijab.png";
 import saeedanwar from "../assets/Images/saeedanwar.png";
 import mirageofatheism from "../assets/Images/mirageofatheism.png";
 

@@ -11,7 +11,7 @@ const Banner = () => {
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
         backgroundPosition: "center center",
-        color: "gold",
+        color: "white",
       }}
     >
       <div>

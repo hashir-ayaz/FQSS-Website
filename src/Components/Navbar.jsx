@@ -39,7 +39,7 @@ const Navbar = () => {
                 About
               </Link>
               <Link
-                to="/contactus"
+                to="/contact-us"
                 className="px-2 py-4 font-semibold text-gray-500 transition duration-300 hover:text-golden-500"
               >
                 Contact Us
@@ -97,7 +97,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to="/contactus"
+                to="/contact-us"
                 className="block px-2 py-4 text-sm text-white transition duration-300 hover:bg-golden-900"
                 onClick={toggleMenu}
               >

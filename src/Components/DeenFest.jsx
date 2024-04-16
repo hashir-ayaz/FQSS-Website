@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo from "../assets/Images/deenfestlogo.png";
 import { Link } from "react-router-dom";
 import DeenFestTimeLine from "./DeenFestTimeLine";
-import { day1Events, day2Events, day3Events } from "./Day1Events";
+import { day1Events, day2Events } from "./Day1Events";
 import { Button, ButtonGroup } from "@mui/material";
 import DeenFestEventCard from "./DeenFestEventCard";
 
@@ -69,13 +69,11 @@ function DeenFest() {
         <ButtonGroup variant="outlined">
           <Button onClick={() => changeTab("day1")}>Day 1</Button>
           <Button onClick={() => changeTab("day2")}>Day 2</Button>
-          <Button onClick={() => changeTab("day3")}>Day 3</Button>
         </ButtonGroup>
       </div>
       <div className="p-4">
         {currentTab === "day1" && <DeenFestTimeLine eventData={day1Events} />}
         {currentTab === "day2" && <DeenFestTimeLine eventData={day2Events} />}
-        {currentTab === "day3" && <DeenFestTimeLine eventData={day3Events} />}
       </div>
 
       <div className="justify-center mx-auto md:max-w-4/5 ">
@@ -97,15 +95,6 @@ function DeenFest() {
             />
           ))}
           {day2Events.map((event, index) => (
-            <DeenFestEventCard
-              key={index}
-              eventName={event.eventName}
-              time={event.time}
-              details={event.details}
-              venue={event.venue}
-            />
-          ))}
-          {day3Events.map((event, index) => (
             <DeenFestEventCard
               key={index}
               eventName={event.eventName}

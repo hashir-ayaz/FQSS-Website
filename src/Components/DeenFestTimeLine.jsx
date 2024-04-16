@@ -25,7 +25,7 @@ export default function DeenFestTimeline({ eventData }) {
             {/* No connector after the last item */}
           </TimelineSeparator>
           <TimelineContent>
-            <h3>{event.event}</h3>
+            <h3 className="text-golden-400">{event.event}</h3>
             <p>{event.details}</p>
             <p className="text-golden-400">{event.venue}</p>
           </TimelineContent>
