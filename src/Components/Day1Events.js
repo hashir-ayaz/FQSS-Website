@@ -87,4 +87,14 @@ export const day2Events = [
     speaker: "",
     venue: "Auditorium",
   },
+  {
+    event: "~ Archery & Archery competition ~",
+    details: "any Archery Club will set up their stuff, ticket based Model will be adopted",
+    day: "29th April & 30th April",
+    time: "9:00 AM - 6:00 PM",
+    products: "Archery Training",
+    vendors: "Yet to Decide",
+    speaker: "NA",
+    location: "cs lawn"
+  }
 ];
