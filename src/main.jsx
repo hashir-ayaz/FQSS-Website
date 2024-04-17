@@ -8,7 +8,7 @@ import Layout from "./Components/Layout.jsx"; // Import the layout component
 import HomePage from "./Components/HomePage.jsx";
 import TallyForm from "./Components/TallyForm.jsx";
 import ContactUs from "./Components/ContactUs.jsx";
-import DeenFest from "./Components/DeenFest.jsx";
+import DeenFest from "./Components/DeenFest/DeenFest.jsx";
 import UserRegistrationForm from "./Components/UserRegistrationForm.jsx";
 
 const router = createBrowserRouter([
