@@ -8,10 +8,10 @@ export default {
       },
       colors: {
         golden: {
-          100: "#fdf6e3", // Lightest
-          200: "#fae9c3",
-          300: "#f7dba3",
-          400: "#f4ce83",
+          100: "#FBE0D5", // Lightest
+          200: "#FAD4AD",
+          300: "#F9C985",
+          400: "#F8BE5D",
           500: "#F7B32B", // Base shade of golden
           600: "#8a6a0e",
           700: "#7e5d0d",

@@ -1,26 +1,27 @@
 import React from "react";
+import fqss from "../assets/Images/deenfestlogopalestine.png";
 
-const AboutCard = ({ imageSrc, title, text }) => {
+function AboutCard({ title, image, backgroundColor }) {
   return (
-    // Use flex-col for mobile and switch to flex-row for larger screens
-    <div className="flex flex-col max-w-4xl mx-auto overflow-hidden border-l-8 rounded-lg shadow-lg md:flex-row bg-golden-500 min-h- border-golden-600">
-      {/* Adjust width to full on small screens and 1/2 on larger screens */}
-      <div className="w-full md:w-1/2">
-        <img
-          src={imageSrc}
-          alt={title}
-          className="object-cover w-full h-full"
-        />
-      </div>
-      {/* Adjust text container width similar to the image container */}
-      <div className="w-full p-8 md:w-1/2">
-        <h2 className="mb-4 text-3xl font-bold text-black">{title}</h2>
-        <div className="mb-8">
-          <p className="mt-2 text-xl text-black">{text}</p>
-        </div>
+    <div
+      className={`flex flex-col items-center justify-center w-full h-screen px-4 pt-0 ${backgroundColor} sm:flex-row sm:px-5 md:px-12 lg:px-24 xl:px-36 2xl:px-48`}
+    >
+      <img
+        src={image || fqss}
+        alt="DeenFest Logo"
+        className="self-center max-w-xs mb-10 sm:max-w-sm md:max-w-2xl"
+      />
+      <div className="flex flex-col max-w-screen-xl px-10 mx-auto text-center">
+        <h1 className="mb-4 text-4xl font-extrabold text-golden-500 sm:text-4xl md:text-5xl lg:text-6xl">
+          {title}
+        </h1>
+        <p className="p-3 text-xl font-semibold text-white md:text-2xl">
+          Deen Fest is a religious festival hosted by FQSS, Islamabad that aims
+          to promote Islamic teachings and values among the youth.
+        </p>
       </div>
     </div>
   );
-};
+}
 
 export default AboutCard;
