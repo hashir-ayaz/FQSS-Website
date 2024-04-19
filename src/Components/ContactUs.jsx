@@ -1,5 +1,6 @@
 import React from "react";
 import SponsorForm from "./SponsorForm";
+import { Link } from "react-router-dom";
 
 const ContactUs = () => {
   return (
@@ -22,17 +23,21 @@ const ContactUs = () => {
               <p>FAST NUCES Islamabad,</p>
               <p>AK Brohi Road, H11</p>
             </div>
-            <div>
-              <h3 className="text-xl font-semibold text-golden-500 lg:text-2xl">
-                PHONE NUMBER
-              </h3>
-              <p>+92 333 XXXXXXX</p>
-            </div>
+            <a href="https://www.instagram.com/fqss_isb/">
+              <div>
+                <h3 className="text-xl font-semibold text-golden-500 lg:text-2xl">
+                  Socials
+                </h3>
+                {/* Added Instagram link */}
+                <p>Instagram</p>
+              </div>
+            </a>
+
             <div>
               <h3 className="text-xl font-semibold text-golden-500 lg:text-2xl">
                 EMAIL
               </h3>
-              <p>fqss@nu.edu.pk</p>
+              <p>deenfest24@gmail.com</p>
             </div>
           </div>
         </div>
