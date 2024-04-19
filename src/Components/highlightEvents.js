@@ -8,7 +8,7 @@ import mirageofatheism from "../assets/Images/mirageofatheism.png";
 const highlightEvents = [
   {
     image: pyaaryatimepass,
-    title: "Pyaar ya time pass",
+    title: "Pyaar Ya Time Pass",
     presenter: "Tuaha Bin Jalil",
     description:
       "How do we navigate the complexities when caught between faith and love in this era of temptations?",
@@ -18,18 +18,18 @@ const highlightEvents = [
     title: "Exploring the Isms",
     presenter: "Muhammad Hijab",
     description:
-      "A discussion on feminism , liberalism and the need for absolute equality.",
+      "A discussion on feminism, liberalism, and the need for absolute equality.",
   },
   {
     image: qaiserraja,
-    title: "Society with Islam and without",
+    title: "Society with Islam and Without",
     presenter: "Qaiser Raja",
     description:
-      "A talk on the profound influence of islam on society and the consequences of its absence.",
+      "A talk on the profound influence of Islam on society and the consequences of its absence.",
   },
   {
     image: saeedanwar,
-    title: "Reasons for the downfall of the Ummah",
+    title: "Reasons for the Downfall of the Ummah",
     presenter: "Saeed Anwar",
     description:
       "Discussing the Palestinian struggle and the role of the Muslim Ummah.",
@@ -37,9 +37,9 @@ const highlightEvents = [
   {
     image: sahiladeem,
     title: "Solidarity with Palestine: Beyond Borders",
-    presenter: "Mr Sahil Adeem",
+    presenter: "Mr. Sahil Adeem",
     description:
-      "Addressing the importance of unity and solidarity with the oppressed and a discussion on muslim identity",
+      "Addressing the importance of unity and solidarity with the oppressed and a discussion on Muslim identity.",
   },
   {
     image: mirageofatheism,
@@ -49,5 +49,6 @@ const highlightEvents = [
       "A compelling case on refuting the misconception that science leads to atheism.",
   },
 ];
-//export
+
+// Export the revised highlightEvents array
 export { highlightEvents };

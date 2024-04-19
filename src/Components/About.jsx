@@ -40,7 +40,7 @@ const About = () => {
             alt="Halaqah Image"
             className="self-center max-w-xs my-10 sm:max-w-sm md:max-w-lg"
           />
-          <div className="flex flex-col max-w-screen-xl px-1 mx-auto text-center md:px-10">
+          <div className="flex flex-col max-w-screen-xl px-1 pt-5 mx-auto text-center md:px-10">
             <h1 className="mb-4 text-4xl font-extrabold text-golden-500 sm:text-4xl md:text-5xl lg:text-6xl">
               Our Mission
             </h1>
