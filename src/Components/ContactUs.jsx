@@ -4,31 +4,41 @@ import SponsorForm from "./SponsorForm";
 const ContactUs = () => {
   return (
     <>
-      <div className="flex flex-col items-center h-full px-4 py-8 bg-black md:items-start">
-        <div className="mx-auto text-white md:text-center max-w-7xl">
-          <h2 className="mb-4 text-3xl font-extrabold text-golden-500">
+      <div className="flex flex-col items-center justify-center min-h-screen px-4 py-8 bg-black lg:py-3 lg:px-20">
+        {/* Increased padding on larger screens for better spacing and centered content vertically and horizontally */}
+        <div className="text-white max-w-7xl">
+          {/* Removed mx-auto and md:text-center to allow text to align naturally which is generally more visually appealing on large screens */}
+          <h2 className="mb-4 text-3xl font-extrabold text-golden-500 lg:text-5xl">
+            {/* Increased font size on large screens for better visibility */}
             Feel free to contact us!
           </h2>
-          <div className="flex flex-col space-y-4 md:justify-center md:flex-row md:space-y-0 md:space-x-8">
+          <div className="flex flex-col space-y-4 md:justify-center md:flex-row md:space-y-0 md:space-x-8 lg:space-x-12">
+            {/* Increased spacing between columns on large screens */}
             <div>
-              <h3 className="text-xl font-semibold text-golden-500">ADDRESS</h3>
+              <h3 className="text-xl font-semibold text-golden-500 lg:text-2xl">
+                {/* Increased font size on large screens for headers */}
+                ADDRESS
+              </h3>
               <p>FAST NUCES Islamabad,</p>
               <p>AK Brohi Road, H11</p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-golden-500">
+              <h3 className="text-xl font-semibold text-golden-500 lg:text-2xl">
                 PHONE NUMBER
               </h3>
               <p>+92 333 XXXXXXX</p>
             </div>
             <div>
-              <h3 className="text-xl font-semibold text-golden-500">EMAIL</h3>
+              <h3 className="text-xl font-semibold text-golden-500 lg:text-2xl">
+                EMAIL
+              </h3>
               <p>fqss@nu.edu.pk</p>
             </div>
           </div>
         </div>
-        {/* SponsorForm component with a white background */}
-        <div className="flex max-h-screen py-8 mx-auto mt-8 md:mt-0 md:max-w-xl">
+        {/* SponsorForm component with appropriate margins for alignment */}
+        <div className="w-full max-w-xl px-4 py-8 mx-auto mt-8 lg:mt-10 lg:max-w-2xl">
+          {/* Increased max-width and adjusted margins on large screens for a better form presentation */}
           <SponsorForm />
         </div>
       </div>

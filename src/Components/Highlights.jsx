@@ -5,7 +5,7 @@ import { highlightEvents } from "./highlightEvents";
 function Highlights() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-black ">
-      <h1 className="mt-10 text-4xl font-bold text-white">Highlights</h1>
+      <h1 className="mt-10 text-4xl font-bold text-golden-500">Highlights</h1>
       <p className="mt-4 mb-10 text-white">
         Check out some of our recent events!
       </p>
