@@ -1,4 +1,4 @@
-# FQSS webaite
+# FQSS website
 
 Has information on the FAST Quran and Sunnah Society. Allows users to register for events
 
