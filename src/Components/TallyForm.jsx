@@ -27,9 +27,9 @@ const TallyForm = () => {
   }, []);
 
   return (
-    <div className="flex-1 bg-white ">
+    <div className="flex-1 ">
       <iframe
-        data-tally-src="https://tally.so/embed/wzqr5g?transparentBackground=1&dynamicHeight=1"
+        data-tally-src="https://tally.so/embed/wzqr5g?dynamicHeight=1"
         loading="lazy"
         style={{
           width: "100%",

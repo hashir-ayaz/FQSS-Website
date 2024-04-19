@@ -12,7 +12,7 @@ import "../../assets/Styles/App.css";
 export default function DeenFestTimeline({ eventData }) {
   return (
     <Timeline
-      className="mx-6 text-white bg-black fontStyle md:mx-40"
+      className="mx-6 text-white bg-black md:mx-40 fontStyle"
       position="alternate"
     >
       {eventData.map((event, index) => (
@@ -26,7 +26,7 @@ export default function DeenFestTimeline({ eventData }) {
             {/* No connector after the last item */}
           </TimelineSeparator>
           <TimelineContent>
-            <h3 className="text-xl text-golden-400">{event.event}</h3>
+            <h3 className="text-lg text-golden-400">{event.eventName}</h3>
             <p>{event.details}</p>
             <p className="text-golden-400">{event.venue}</p>
           </TimelineContent>

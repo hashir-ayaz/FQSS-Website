@@ -55,7 +55,7 @@ export const day1Events = [
 
 export const day2Events = [
   {
-    eventName: "Fitnah related theme",
+    eventName: "Seminar on Fighting Fitnah",
     details: "Exploring strategies to combat fitnah in modern times.",
     day: "30th April, 2024",
     time: "10:00 AM to 1:00 PM",
@@ -87,5 +87,15 @@ export const day2Events = [
     time: "9:00 AM - 6:00 PM",
     venue: "CS Lawn",
     products: "Archery Training",
+  },
+  {
+    eventName: "CS Web Design Event",
+    details:
+      "A competition where participants design a website based on a given theme.",
+    day: "30th April, 2024",
+    time: "10:00 AM onwards",
+    venue: "C Block Lab",
+    products: "Web Designing",
+    vendors: "CS Department",
   },
 ];
