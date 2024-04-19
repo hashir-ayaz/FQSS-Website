@@ -41,7 +41,7 @@ export const day1Events = [
     venue: "CS Lawn",
   },
   {
-    eventName: "Robo Race",
+    eventName: "Robo Race (Group Event)",
     details:
       "A thrilling competition where participants showcase their robot designs in a race against time and obstacles.", // No specific details provided
     day: "29th April, 2024",
@@ -50,6 +50,7 @@ export const day1Events = [
     vendors: "collab with FES", // Specifies a collaboration with FES
     speaker: "", // No speaker mentioned
     venue: "EE lobby", // Event location
+    prizeMoney: "15,000 PKR",
   },
 ];
 
@@ -70,6 +71,7 @@ export const day2Events = [
     time: "2:00 PM to 5:00 PM",
     venue: "Males: Auditorium, Females: Conference Room",
     speaker: "2 judges confirmed for males, seeking female judges",
+    prizeMoney: "30,000 PKR",
   },
   {
     eventName: "Islamic Quiz",
@@ -79,6 +81,7 @@ export const day2Events = [
     time: "6:00 PM to 8:00 PM",
     venue: "Auditorium",
     vendors: "Sponsors Required",
+    prizeMoney: "10,000 PKR",
   },
   {
     eventName: "Archery competition",
@@ -97,5 +100,6 @@ export const day2Events = [
     venue: "C Block Lab",
     products: "Web Designing",
     vendors: "CS Department",
+    prizeMoney: "20,000 PKR",
   },
 ];

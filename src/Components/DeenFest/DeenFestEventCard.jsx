@@ -8,6 +8,7 @@ const DeenFestEventCard = ({
   venue,
   day,
   speaker,
+  prizeMoney,
 }) => {
   return (
     <Card className="mt-6 transition-transform duration-200 border border-white border-solid hover:-translate-y-1 bg-opacity-85 w-96 bg-golden-500">
@@ -53,6 +54,15 @@ const DeenFestEventCard = ({
               <span className="font-semibold text-black">
                 Speaker:{" "}
                 <span className="font-normal text-white">{speaker}</span>
+              </span>
+              <br />
+            </>
+          )}
+          {!!prizeMoney && (
+            <>
+              <span className="font-semibold text-black">
+                Prize Money:{" "}
+                <span className="font-normal text-white">{prizeMoney}</span>
               </span>
               <br />
             </>

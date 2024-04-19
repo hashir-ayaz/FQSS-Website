@@ -25,6 +25,7 @@ function DeenFest() {
             venue={event.venue}
             day={event.day}
             speaker={event.speaker}
+            prizeMoney={event.prizeMoney}
           />
         ))}
         {day2Events.map((event, index) => (
@@ -35,6 +36,8 @@ function DeenFest() {
             details={event.details}
             venue={event.venue}
             day={event.day}
+            speaker={event.speaker}
+            prizeMoney={event.prizeMoney}
           />
         ))}
       </div>
