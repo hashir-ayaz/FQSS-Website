@@ -46,7 +46,7 @@ const Footer = () => {
             <li>Email: fqss@nu.edu.pk</li>
             <li>Phone: +123 456 7890</li>
             <li>
-              <Link href="/sponsor" className="hover:underline">
+              <Link to="/contact-us" className="hover:underline">
                 Become a Sponsor
               </Link>
             </li>

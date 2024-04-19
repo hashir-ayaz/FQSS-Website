@@ -6,7 +6,7 @@ import fqss from "../assets/Images/deenfestlogopalestine.png"; // Placeholder fo
 const About = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen md:flex-wrap">
-      <div className="flex flex-col items-center justify-center w-full px-4 bg-golden-500 opacity-85 sm:flex-row sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-48">
+      <div className="flex flex-col items-center justify-center w-full px-4 bg-golden-500 sm:flex-row sm:px-5 md:px-10 lg:px-20 xl:px-32 2xl:px-48">
         <img
           src={team || fqss}
           alt="Team Photo"
@@ -22,7 +22,7 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-6 p-0 min-h-1/2 md:flex-wrap">
+      <div className="flex flex-col flex-wrap items-center justify-center gap-6 p-0 min-h-1/2 ">
         <div className="flex flex-col items-center justify-center w-full px-4 pt-4 bg-black min-h-1/2 sm:flex-row sm:px-5 md:px-12 lg:px-24 xl:px-36 2xl:px-48">
           <img
             src={HalaqahImage || fqss}

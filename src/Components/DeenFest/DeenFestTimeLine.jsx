@@ -6,17 +6,18 @@ import TimelineConnector from "@mui/lab/TimelineConnector";
 import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
+import "../../assets/Styles/App.css";
 
 // Update the function signature to use props correctly.
 export default function DeenFestTimeline({ eventData }) {
   return (
     <Timeline
-      className="mx-6 text-white bg-black md:mx-40"
+      className="mx-6 text-white bg-black fontStyle md:mx-40"
       position="alternate"
     >
       {eventData.map((event, index) => (
         <TimelineItem key={index}>
-          <TimelineOppositeContent className="text-white">
+          <TimelineOppositeContent className="text-white ">
             {event.time}
           </TimelineOppositeContent>
           <TimelineSeparator>

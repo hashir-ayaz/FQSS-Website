@@ -60,3 +60,7 @@
   width: 115%;
   height: 115%;
 }
+
+.fontStyle {
+  font-family: "Bitter", sans-serif; /* Replace 'Arial' with your desired font */
+}

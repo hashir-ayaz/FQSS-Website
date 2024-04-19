@@ -1,100 +1,91 @@
 export const day1Events = [
   {
-    event: "Opening Ceremony",
+    eventName: "Opening Ceremony",
     details: "Introduction of DeenFest, its purpose, and its team.",
     day: "29th April, 2024",
     time: "10:00 AM",
-    products: "",
-    vendors: "",
-    speaker: "EC (President, Secretaries, Director, Mentor)",
     venue: "Auditorium",
+    speaker: "EC (President, Secretaries, Director, Mentor)",
   },
   {
-    event: "Exhibition",
+    eventName: "Exhibition",
     details: "Seerah Models Exhibition",
     day: "29th April, 2024",
     time: "10AM Onwards",
-    products: "",
-    vendors: "",
-    speaker: "",
     venue: "Indoor FSM Lobby",
   },
   {
-    event: "Seerah with respect to modern society",
+    eventName: "Seerah with respect to modern society",
     details:
       "Dealing with the idea of Islam being not only a religion but a complete code of life, in the light of Seerah.",
     day: "29th April, 2024",
     time: "11.00 am to 1:00 PM",
-    products: "",
-    vendors: "",
-    speaker: "Molana Saqib Raza Mustafai sahab",
     venue: "Auditorium",
+    speaker: "Molana Saqib Raza Mustafai sahab",
   },
   {
-    event: "Women Panel Talk  : Feminism and women's rights",
+    eventName: "Women Panel Talk: Feminism and women's rights",
     details:
       "A Panel talk, discussing the issues women face in society, including discussions on feminism and women's rights in the context of Islam.",
     day: "29th April, 2024",
     time: "2:30 PM to 4:30 PM",
-    products: "",
-    vendors: "YC, Dr. Kanwal from azan",
-    speaker: "",
     venue: "Auditorium",
+    vendors: "YC, Dr. Kanwal from azan",
   },
   {
-    event: "Bonfire And BBQ Night",
+    eventName: "Bonfire And BBQ Night",
     details:
-      "Bonfire (separate for Boys and Girls) will be held, along with a BBQ. A night filled with warmth, and delicious BBQ for attendees.",
+      "A night filled with warmth and delicious BBQ, featuring separate bonfires for boys and girls.",
     day: "29th April, 2024",
     time: "5.30 PM onwards",
-    products: "",
-    vendors: "",
-    speaker: "",
     venue: "CS Lawn",
+  },
+  {
+    eventName: "Robo Race",
+    details:
+      "A thrilling competition where participants showcase their robot designs in a race against time and obstacles.", // No specific details provided
+    day: "29th April, 2024",
+    time: "1:00 pm onwards",
+    products: "", // No specific products mentioned
+    vendors: "collab with FES", // Specifies a collaboration with FES
+    speaker: "", // No speaker mentioned
+    venue: "EE lobby", // Event location
   },
 ];
 
 export const day2Events = [
   {
-    event: "fitnah related theme",
-    details: "how to fight with fitnah",
+    eventName: "Fitnah related theme",
+    details: "Exploring strategies to combat fitnah in modern times.",
     day: "30th April, 2024",
     time: "10:00 AM to 1:00 PM",
-    products: "",
-    vendors: "",
-    speaker: "Molana Tariq Masood",
     venue: "Auditorium",
+    speaker: "Molana Tariq Masood",
   },
   {
-    event: "Naat Competition",
+    eventName: "Naat Competition",
     details:
-      "Participants will be given a list of naats to choose from. They will perform, and judges will score them based on their performances.",
+      "Participants will perform selected naats, judged on their performances.",
     day: "30th April, 2024",
     time: "2:00 PM to 5:00 PM",
-    products: "",
-    vendors: "",
-    speaker: "2 judges confirmed for males, looking for female judges",
-    venue: "males: auditorium, female: conference room",
+    venue: "Males: Auditorium, Females: Conference Room",
+    speaker: "2 judges confirmed for males, seeking female judges",
   },
   {
-    event: "Islamic Quiz",
+    eventName: "Islamic Quiz",
     details:
-      "A 1-day Quiz, with 2 rounds, and the winners may be given some form of prize or certificate.",
+      "A competitive quiz covering various topics, with prizes for the winners.",
     day: "30th April, 2024",
     time: "6:00 PM to 8:00 PM",
-    products: "",
-    vendors: "Sponsors Required",
-    speaker: "",
     venue: "Auditorium",
+    vendors: "Sponsors Required",
   },
   {
-    event: "~ Archery & Archery competition ~",
-    details: "any Archery Club will set up their stuff, ticket based Model will be adopted",
-    day: "29th April & 30th April",
+    eventName: "Archery competition",
+    details: "A day-long archery competition, open to all with registration.",
+    day: "29th & 30th April",
     time: "9:00 AM - 6:00 PM",
+    venue: "CS Lawn",
     products: "Archery Training",
-    vendors: "Yet to Decide",
-    speaker: "NA",
-    location: "cs lawn"
-  }
+  },
 ];

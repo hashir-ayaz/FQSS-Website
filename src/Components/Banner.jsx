@@ -22,8 +22,10 @@ const Banner = () => {
         </p>
       </div>
       <div className="text-right">
-        <h2 className="text-2xl font-semibold">REGISTRATION DEADLINE</h2>
-        <p className="text-lg">28th April 2024</p>
+        <h2 className="text-2xl font-semibold drop-shadow-sm">
+          REGISTRATION DEADLINE
+        </h2>
+        <p className="text-lg drop-shadow-md">28th April 2024</p>
       </div>
     </div>
   );
