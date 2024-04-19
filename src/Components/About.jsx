@@ -12,13 +12,24 @@ const About = () => {
           alt="Team Photo"
           className="self-center max-w-xs my-10 sm:max-w-sm md:max-w-lg"
         />
-        <div className="flex flex-col max-w-screen-xl px-10 mx-auto text-center">
+        <div className="flex flex-col max-w-screen-xl px-1 mx-auto text-center md:px-10">
           <h1 className="mb-4 text-4xl font-extrabold text-black sm:text-4xl md:text-5xl lg:text-6xl">
             About Us
           </h1>
-          <p className="p-3 text-xl font-semibold text-white md:text-2xl">
-            Deen Fest is a religious festival hosted by FQSS, Islamabad that
-            aims to promote Islamic teachings and values among the youth.
+          <p className="pb-6 text-xl font-semibold text-white justify-text md:text-2xl">
+            The Fast Quran and Sunnah Society (FQSS) is a dedicated religious
+            society at FAST Islamabad, focused on assisting students in
+            harmonizing their educational pursuits with their Islamic faith.
+            Recognizing the challenges that students often face in balancing
+            their academic responsibilities with their religious duties, FQSS
+            provides a supportive community where both aspects can thrive in
+            tandem. The society frequently invites esteemed speakers and guests
+            to engage with the student body through talks and educational
+            sessions. These events are designed to inspire, educate, and
+            motivate students, fostering a deep connection with Islamic
+            teachings while excelling academically. Through its activities, FQSS
+            plays a pivotal role in nurturing a well-rounded and spiritually
+            enriched student environment.
           </p>
         </div>
       </div>
@@ -29,13 +40,20 @@ const About = () => {
             alt="Halaqah Image"
             className="self-center max-w-xs my-10 sm:max-w-sm md:max-w-lg"
           />
-          <div className="flex flex-col max-w-screen-xl px-10 mx-auto text-center">
+          <div className="flex flex-col max-w-screen-xl px-1 mx-auto text-center md:px-10">
             <h1 className="mb-4 text-4xl font-extrabold text-golden-500 sm:text-4xl md:text-5xl lg:text-6xl">
               Our Mission
             </h1>
-            <p className="p-3 text-xl font-semibold text-white md:text-2xl">
-              Deen Fest is a religious festival hosted by FQSS, Islamabad that
-              aims to promote Islamic teachings and values among the youth.
+            <p className="pb-6 text-xl font-semibold text-white justify-text md:text-2xl">
+              The mission of the Fast Quran and Sunnah Society (FQSS) at FAST
+              Islamabad is to support and empower students in seamlessly
+              integrating their Islamic faith with academic pursuits. We strive
+              to provide a vibrant platform where students can deepen their
+              religious knowledge, engage in meaningful discussions, and develop
+              holistically through regular educational and inspirational
+              sessions with esteemed speakers. Our goal is to foster a
+              well-rounded, spiritually enriched community that excels both
+              academically and spiritually..
             </p>
           </div>
         </div>
