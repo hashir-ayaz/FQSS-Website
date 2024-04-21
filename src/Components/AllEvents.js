@@ -8,6 +8,15 @@ export const day1Events = [
     speaker: "EC (President, Secretaries, Director, Mentor)",
   },
   {
+    eventName: "Men Panel Talk",
+    details: "Seerah Models Exhibition",
+    day: "29th April, 2024",
+    time: "2:30 - 4:30PM",
+    venue: "CS Lawn",
+    speaker:
+      "Mr. Yaseen - Naseeha Institute \n Ustad Daniyal Malik - Al Burhan \n Raja Zia Ul Haq - Youth Club",
+  },
+  {
     eventName: "Exhibition",
     details: "Seerah Models Exhibition",
     day: "29th April, 2024",

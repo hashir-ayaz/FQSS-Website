@@ -45,7 +45,7 @@ const Footer = () => {
         <div className="mb-6 ">
           <h3 className="mb-4 text-lg font-bold">Contact Us</h3>
           <ul>
-            <li>Email: fqss@nu.edu.pk</li>
+            <li>Email: fqss.isb@nu.edu.pk</li>
             <li>
               <Link to="/contact-us" className="hover:underline">
                 Become a Sponsor

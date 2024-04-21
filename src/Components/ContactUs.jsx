@@ -1,6 +1,5 @@
 import React from "react";
 import SponsorForm from "./SponsorForm";
-import { Link } from "react-router-dom";
 
 const ContactUs = () => {
   return (
@@ -37,7 +36,7 @@ const ContactUs = () => {
               <h3 className="text-xl font-semibold text-golden-500 lg:text-2xl">
                 EMAIL
               </h3>
-              <p>deenfest24@gmail.com</p>
+              <p>fqss.isb@nu.edu.pk</p>
             </div>
           </div>
         </div>
