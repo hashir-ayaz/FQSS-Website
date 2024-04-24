@@ -18,12 +18,20 @@ function DeenFestHero({ title }) {
           Deen Fest is a religious festival hosted by FQSS, Islamabad that aims
           to promote Islamic teachings and values among the youth.
         </p>
-        <Link
-          to="/deen-fest-registration"
-          className="inline-block w-40 px-4 py-2 mx-auto mt-4 text-white rounded-xl bg-golden-500 hover:bg-golden-400"
-        >
-          Register Now!
-        </Link>
+        <div className="">
+          <Link
+            to="/deen-fest-registration"
+            className="inline-block w-40 px-4 py-2 mx-2 mt-4 text-white rounded-xl bg-golden-500 hover:bg-golden-400"
+          >
+            Register Now!
+          </Link>
+          <Link
+            to="/deen-fest-events"
+            className="inline-block w-40 px-4 py-2 mx-2 mt-4 text-white transition duration-300 ease-in-out border border-solid rounded-xl border-golden-500 hover:bg-golden-500"
+          >
+            View All Events
+          </Link>
+        </div>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ function DeenFestAbout() {
         <h2 className="mb-4 text-2xl font-bold text-black sm:text-4xl md:text-4xl lg:text-5xl">
           About Deen Fest
         </h2>
-        <p className="mb-8 font-semibold max-w-screen md:text-2xl">
+        <p className="mb-8 font-semibold text-black max-w-screen md:text-2xl">
           Deen Fest provides a platform for students to learn about the Quran
           and Sunnah in a fun and engaging way.
         </p>

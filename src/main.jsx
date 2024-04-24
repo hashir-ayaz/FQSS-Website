@@ -10,6 +10,7 @@ import TallyForm from "./Components/TallyForm.jsx";
 import ContactUs from "./Components/ContactUs.jsx";
 import DeenFest from "./Components/DeenFest/DeenFest.jsx";
 import UserRegistrationForm from "./Components/UserRegistrationForm.jsx";
+import DeenFestEvents from "./Components/DeenFest/DeenFestEvents.jsx";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
       {
         path: "/deenfest",
         element: <DeenFest />,
+      },
+      {
+        path: "/deen-fest-events",
+        element: <DeenFestEvents />,
       },
 
       {
