@@ -6,3 +6,6 @@ TO run:
 -clone or download zip
 -cd to project directory
 -npm run dev
+
+
+Deployed at: https://fqss-website.vercel.app/
