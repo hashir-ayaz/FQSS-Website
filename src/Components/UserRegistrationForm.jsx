@@ -15,51 +15,60 @@ function UserRegistrationForm() {
         }
       );
       console.log("Form submitted successfully", response.data);
+      //alert the user that the form was submitted successfully
+      // alert("Form submitted successfully");
+      //change button text to "Submitted"
+      document.getElementById("submitButton").innerText = "Submitted";
     } catch (error) {
       console.error("Error submitting form:", error);
+    } finally {
+      //reset the form fields
+      event.target.reset();
     }
   };
 
   return (
-    <div className="max-w-md p-4 mx-auto text-white bg-black">
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <FormField
-          label="Full Name *"
-          id="fullName"
-          type="text"
-          placeholder="E.g. Mohammed Ali"
-        />
-        <FormField
-          label="Email *"
-          id="email"
-          name="email"
-          type="email"
-          placeholder="e.g. muhammad@gmail.com"
-        />
-        <FormField
-          label="Phone Number *"
-          id="phone"
-          name="phone_number"
-          type="tel"
-          placeholder="+92 333 XXXXXXX"
-        />
-        <FormSelect
-          label="Which Event would you like to register for? *"
-          id="eventName"
-          name="eventName"
-        >
-          <option value="">Choose an event</option>
-          <option>Event A</option>
-          <option>Event B</option>
-          <option>Event C</option>
-        </FormSelect>
-        <FileField
-          label="Please send the amount to +92 333 XXXXXXX and upload the screenshot here *"
-          id="payment"
-          name="paymentImage"
-        />
-        <SubmitButton />
-      </form>
+    <div className="min-h-screen bg-black">
+      <div className="max-w-lg p-4 mx-auto text-white bg-black md:max-w-2xl lg:max-w-4xl">
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <FormField
+            label="Full Name *"
+            id="fullName"
+            type="text"
+            placeholder="E.g. Mohammed Ali"
+          />
+          <FormField
+            label="Email *"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="e.g. muhammad@gmail.com"
+          />
+          <FormField
+            label="Phone Number *"
+            id="phone"
+            name="phone_number"
+            type="tel"
+            placeholder="+92 333 XXXXXXX"
+          />
+          <FormSelect
+            label="Which Event would you like to register for? *"
+            id="eventName"
+            name="eventName"
+          >
+            <option value="">Choose an event</option>
+            <option>Event A</option>
+            <option>Event B</option>
+            <option>Event C</option>
+          </FormSelect>
+          <FileField
+            label="Please send the amount to +92 333 XXXXXXX and upload the screenshot here *"
+            id="payment"
+            name="paymentImage"
+          />
+          <SubmitButton id="submitButton" />
+        </form>
+      </div>
     </div>
   );
 }
@@ -122,7 +131,8 @@ function SubmitButton() {
   return (
     <button
       type="submit"
-      className="flex justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-golden-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+      className="flex justify-center w-full px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md shadow-sm bg-golden-500 hover:bg-golden-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+      id="submitButton"
     >
       Submit
     </button>

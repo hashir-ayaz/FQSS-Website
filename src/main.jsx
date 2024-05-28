@@ -23,8 +23,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/deen-fest-registration",
-        element: <TallyForm />,
-        //element: <UserRegistrationForm />,
+        // element: <TallyForm />,
+        element: <UserRegistrationForm />,
       },
       {
         path: "/about",
