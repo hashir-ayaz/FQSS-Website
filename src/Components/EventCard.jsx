@@ -2,27 +2,19 @@ import React from "react";
 
 const EventCard = ({ title, presenter, description, image }) => {
   return (
-    <div className="flex flex-col h-full max-w-sm overflow-hidden transition-transform duration-200 rounded shadow-lg bg-golden-500 bg-opacity-90 hover:-translate-y-1">
-      {" "}
-      {/* Ensure cards grow to full height */}
+    <div className="flex flex-col h-full max-w-sm overflow-hidden transition-transform duration-300 rounded-lg shadow-xl bg-golden-500 hover:shadow-2xl hover:scale-105">
       <div className="flex-shrink-0">
-        {" "}
-        {/* Prevent the image from stretching */}
         <img
-          className="object-cover w-full h-48"
+          className="object-cover w-full h-48 rounded-t-lg"
           src={image}
           alt={title}
-        />{" "}
-        {/* Fixed height for images */}
+        />
       </div>
       <div className="flex flex-col flex-grow p-6">
-        {" "}
-        {/* Flex container for content */}
-        <h3 className="mb-2 text-xl font-bold text-gray-800">{title}</h3>
-        <p className="flex-grow text-black">{description}</p>{" "}
-        {/* Flex-grow to push the footer down */}
+        <h3 className="mb-2 text-2xl font-bold text-gray-900">{title}</h3>
+        <p className="flex-grow leading-relaxed text-gray-700">{description}</p>
         <div className="mt-4">
-          <span className="inline-block px-3 py-1 text-sm font-semibold text-gray-800 bg-white rounded-full">
+          <span className="inline-block px-4 py-2 text-sm font-semibold text-white bg-blue-600 rounded-full">
             {presenter}
           </span>
         </div>

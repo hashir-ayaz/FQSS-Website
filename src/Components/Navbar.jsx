@@ -11,7 +11,8 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 p-2 bg-black shadow-lg ">
       <div className="max-w-6xl px-4 mx-auto">
-        <div className="flex justify-between">
+        <div className="flex items-center justify-between">
+          {/* Logo and Links */}
           <div className="flex space-x-7">
             <div>
               <Link to="/" className="flex items-center px-2 py-4">
@@ -24,6 +25,7 @@ const Navbar = () => {
               </Link>
             </div>
 
+            {/* Regular Navbar Links */}
             <div className="items-center hidden space-x-1 md:flex">
               <Link
                 to="/"
@@ -47,12 +49,17 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="items-center hidden space-x-3 md:flex">
-            <Link to="/deenfest" className="bn29">
-              Deen Fest
+          {/* Deen Fest Button */}
+          <div className="hidden ml-auto md:flex">
+            <Link
+              to="/deenfest"
+              className="inline-flex items-center justify-center w-40 px-4 py-2 mx-2 text-white transition duration-300 ease-in-out border border-solid rounded-xl border-golden-500 hover:bg-golden-500"
+            >
+              Deen Fest ✨
             </Link>
           </div>
 
+          {/* Hamburger Menu for Mobile */}
           <div className="flex items-center md:hidden">
             <button
               className="outline-none mobile-menu-button"
@@ -73,6 +80,8 @@ const Navbar = () => {
           </div>
         </div>
       </div>
+
+      {/* Mobile Menu */}
       {isMenuOpen && (
         <div className=" mobile-menu">
           <ul>
@@ -107,7 +116,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/deenfest"
-                className="block px-2 py-4 text-sm text-white transition duration-300 hover:bg-golden-900"
+                className="block px-2 py-4 text-sm font-semibold text-white transition duration-300 hover:bg-golden-900 bg-golden-500"
                 onClick={toggleMenu}
               >
                 ✨ Deen Fest
