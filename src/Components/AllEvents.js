@@ -2,113 +2,140 @@ export const day1Events = [
   {
     eventName: "Opening Ceremony",
     details: "Introduction of DeenFest, its purpose, and its team.",
-    day: "29th April, 2024",
-    time: "10:00 AM",
+    day: "11th Nov, 2024",
+    time: "9:00 AM",
     venue: "Auditorium",
-    speaker: "EC (President, Secretaries, Director, Mentor)",
-  },
-  {
-    eventName: "Men Panel Talk",
-    details: "Seerah Models Exhibition",
-    day: "29th April, 2024",
-    time: "2:30 - 4:30PM",
-    venue: "CS Lawn",
     speaker:
-      "Mr. Yaseen - Naseeha Institute \n Ustad Daniyal Malik - Al Burhan \n Raja Zia Ul Haq - Youth Club",
+      "Hassan Ahmed Awan (EC - President, Secretaries, Director, Mentor)",
   },
   {
     eventName: "Exhibition",
     details: "Seerah Models Exhibition",
-    day: "29th April, 2024",
-    time: "10AM Onwards",
-    venue: "Indoor FSM Lobby",
+    day: "11th Nov, 2024",
+    time: "10:00 AM Onwards",
+    venue: "Indoor FSM Lobby/ FSM Lawn",
   },
   {
-    eventName: "Seerah with respect to modern society",
+    eventName: "MSRM:seerah with respect to modern society",
     details:
-      "Dealing with the idea of Islam being not only a religion but a complete code of life, in the light of Seerah.",
-    day: "29th April, 2024",
-    time: "11.00 am to 1:00 PM",
-    venue: "Auditorium",
+      "Dealing with the idea of Islam being not only relatable but the only way to preserve Life on this Earth even in the modern era of Scientific advancements",
+    day: "11th Nov, 2024",
+    time: "11:00 AM to 1:00 PM",
+    venue: "CS Lawn",
     speaker: "Molana Saqib Raza Mustafai sahab",
   },
   {
-    eventName: "Women Panel Talk: Feminism and women's rights",
+    eventName: "Robo Race",
     details:
-      "A Panel talk, discussing the issues women face in society, including discussions on feminism and women's rights in the context of Islam.",
-    day: "29th April, 2024",
-    time: "2:30 PM to 4:30 PM",
+      "X teams will be registered and then they will submit their ideas and Ulema will approve them if unapproved they will be given 1 more chance to resubmit their idea. Winner will be announced after completion.",
+    day: "11th Nov, 2024",
+    time: "1:00 PM onwards",
+    venue: "CS Lobby",
+    prizeMoney: "Winner prize: 12k Runner up prize: 8k",
+    vendors: "FES",
+  },
+  {
+    eventName: "Video Competition",
+    details:
+      "Teams will submit their videos and the presented infront of judges. Best videos will be chosen and they then will be rewarded with the prize. The ads will be shown in the mega event too.",
+    day: "11th Nov, 2024",
+    time: "1:00 PM to 3:00 PM",
     venue: "Auditorium",
-    vendors: "YC, Dr. Kanwal from azan",
+    prizeMoney: "PKR 50000 winner and PKR 20000 runner-up",
+    vendors: "Collab with Takhleeq/FPS/FAST Content Creators",
   },
   {
-    eventName: "Bonfire And BBQ Night",
+    eventName: "Men Panel Talk: Finding Light in the ages of fitnah",
     details:
-      "A night filled with warmth and delicious BBQ, featuring separate bonfires for boys and girls.",
-    day: "29th April, 2024",
-    time: "5.30 PM onwards",
+      "Men Panel talk featuring famous speakers like Sir Yasin from Naseeha, Ustad Danyal from Al-burhan and a speaker from YC",
+    day: "11th Nov, 2024",
+    time: "3:30 - 5:00 PM",
     venue: "CS Lawn",
-  },
-  {
-    eventName: "Robo Race (Group Event)",
-    details:
-      "A thrilling competition where participants showcase their robot designs in a race against time and obstacles.", // No specific details provided
-    day: "29th April, 2024",
-    time: "1:00 pm onwards",
-    products: "", // No specific products mentioned
-    vendors: "collab with FES", // Specifies a collaboration with FES
-    speaker: "", // No speaker mentioned
-    venue: "EE lobby", // Event location
-    prizeMoney: "15,000 PKR",
+    speaker: "Sir Yasin from Naseeha, Ustad Danyal, YC Speaker",
   },
 ];
 
 export const day2Events = [
   {
-    eventName: "Seminar on Fighting Fitnah",
-    details: "Exploring strategies to combat fitnah in modern times.",
-    day: "30th April, 2024",
-    time: "10:00 AM to 1:00 PM",
+    eventName: "Islamic Quiz",
+    details:
+      "Theme of the quiz can be seerah-related similar to Seerah trivia that was conducted in Nascon. Members from our team will conduct the quiz.",
+    day: "12th Nov, 2024",
+    time: "9:00 AM to 10:30 AM",
     venue: "Auditorium",
+    prizeMoney: "PKR 10,000 for winner (can add a runner-up as well)",
+    vendors: "Sponsors Required",
+  },
+  {
+    eventName: "MTM: Fitnah related theme",
+    details:
+      "Mufti sahab's talk on how to navigate modern fitnahs effectively, followed with a QnA.",
+    day: "12th Nov, 2024",
+    time: "11:00 AM to 1:00 PM",
+    venue: "CS Lawn",
     speaker: "Molana Tariq Masood",
   },
   {
     eventName: "Naat Competition",
     details:
-      "Participants will perform selected naats, judged on their performances.",
-    day: "30th April, 2024",
-    time: "2:00 PM to 5:00 PM",
-    venue: "Males: Auditorium, Females: Conference Room",
-    speaker: "2 judges confirmed for males, seeking female judges",
-    prizeMoney: "30,000 PKR",
-  },
-  {
-    eventName: "Islamic Quiz",
-    details:
-      "A competitive quiz covering various topics, with prizes for the winners.",
-    day: "30th April, 2024",
-    time: "6:00 PM to 8:00 PM",
+      "Participants will be given a list of naats to choose from. Single Round. Judges will decide the Winner.",
+    day: "12th Nov, 2024",
+    time: "1:00 PM to 3:00 PM",
     venue: "Auditorium",
+    prizeMoney:
+      "PKR 30,000 for winners (15,000 each), PKR 10,000 for runner-up (5,000 each)",
     vendors: "Sponsors Required",
-    prizeMoney: "10,000 PKR",
   },
   {
-    eventName: "Archery competition",
-    details: "A day-long archery competition, open to all with registration.",
-    day: "29th & 30th April",
-    time: "9:00 AM - 6:00 PM",
+    eventName: "Web Designing",
+    details: "Web designing competition",
+    day: "12th Nov, 2024",
+    time: "10:00 AM onwards",
+    venue: "C Block Labs",
+    prizeMoney: "PKR 1500",
+  },
+  {
+    eventName: "Women Panel Talk: Feminism and women's rights",
+    details:
+      "A Panel talk, discussing the issues women face and their solutions in the Light of Islam.",
+    day: "12th Nov, 2024",
+    time: "3:00 PM to 5:00 PM",
     venue: "CS Lawn",
+    speaker: "Dr. Kanwal from Azan",
+  },
+  {
+    eventName: "Donation Drive",
+    details: "Donation for Palestine",
+    day: "11th & 12th Nov, 2024",
+    time: "9:00 AM to 6:00 PM",
+    venue: "Outside Cafe",
+    vendors: "Alkhidmat",
+  },
+  {
+    eventName: "Stalls",
+    details:
+      "Setting up of stalls of Community partners/Sponsors/Food stalls/Student stalls/Donation Stalls",
+    day: "11th & 12th Nov, 2024",
+    time: "9:00 AM to 6:00 PM",
+    venue: "Outside Cafeteria",
+    vendors: "Outsiders and Students (YC, Huda, Battalusaal, Al Huda)",
+  },
+  {
+    eventName: "Archery & Archery Competition",
+    details:
+      "Any Archery Club will set up their stall, ticket based Model will be adopted",
+    day: "11th & 12th Nov, 2024",
+    time: "9:00 AM - 6:00 PM",
+    venue: "FSM Lawn",
     products: "Archery Training",
   },
   {
-    eventName: "CS Web Design Event",
+    eventName: "Wrestling/Arm Wrestling",
     details:
-      "A competition where participants design a website based on a given theme.",
-    day: "30th April, 2024",
-    time: "10:00 AM onwards",
-    venue: "C Block Lab",
-    products: "Web Designing",
-    vendors: "CS Department",
-    prizeMoney: "20,000 PKR",
+      "A wrestling mat will be brought in by any Wrestling Club (Boys Only)",
+    day: "11th & 12th Nov, 2024",
+    time: "9:00 AM - 6:00 PM",
+    venue: "FSM Lawn",
+    products: "Wrestling Training",
   },
 ];
