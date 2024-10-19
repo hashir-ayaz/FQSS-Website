@@ -116,7 +116,7 @@ const Navbar = () => {
             <li>
               <Link
                 to="/deenfest"
-                className="block px-2 py-4 text-sm font-semibold text-white transition duration-300 hover:bg-golden-900 bg-golden-500"
+                className="block px-2 py-4 text-sm font-semibold text-white transition duration-300 hover:bg-golden-900 "
                 onClick={toggleMenu}
               >
                 ✨ Deen Fest
